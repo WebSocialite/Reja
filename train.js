@@ -1,4 +1,4 @@
-// TASK  C 
+// TASK  C  test
 class Shop {
     non = 0;
     cola = 0;
