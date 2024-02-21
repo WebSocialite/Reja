@@ -1,54 +1,76 @@
-// TASK  C  test
-class Shop {
-    non = 0;
-    cola = 0;
-    lagmon = 0;
-constructor(non, cola, lagmon) {
-    this.non = non;
-    this.cola = cola;
-    this.lagmon = lagmon;
-};
-//method
-sotish(sold) {
-    if (this.non -= sold) {
-    } else if (this.cola -= sold) {
-    } else if (this.lagmon -= sold) {
-     console.log(`${this.oziqa}`);
-    } 
+
+
+// // TASK  C  test
+// class Shop {
+//     non = 0;
+//     cola = 0;
+//     lagmon = 0;
+// constructor(non, cola, lagmon) {
+//     this.non = non;
+//     this.cola = cola;
+//     this.lagmon = lagmon;
+// };
+// //method
+// sotish(sold) {
+//     if (this.non -= sold) {
+//     } else if (this.cola -= sold) {
+//     } else if (this.lagmon -= sold) {
+//      console.log(`${this.oziqa}`);
+//     } 
     
-};
-  qabul(oziqa) {
-    if (this.non += oziqa) {
-        console.log(oziqa);
-    } else if (this.cola += oziqa) {
-        console.log(oziqa);
-    } else if (this.lagmon += oziqa) {
-        console.log(oziqa);
-    }
-};
-qoldiq() {
-    console.log(`now 20:40, and you have ${this.non} non, 
-    ${this.cola} cola, 
-    ${this.lagmon} lagmon`);
+// };
+//   qabul(oziqa) {
+//     if (this.non += oziqa) {
+//         console.log(oziqa);
+//     } else if (this.cola += oziqa) {
+//         console.log(oziqa);
+//     } else if (this.lagmon += oziqa) {
+//         console.log(oziqa);
+//     }
+// };
+// qoldiq() {
+//     console.log(`now 20:40, and you have ${this.non} non, 
+//     ${this.cola} cola, 
+//     ${this.lagmon} lagmon`);
 
-};
-};
-           // TASK D
+// };
+// };
+//            // TASK D
 
-function checkContent(str1, str2) {
-    const c = str1 === str2;
-    console.log(c);
-}
+// function checkContent(str1, str2) {
+//     const c = str1 === str2;
+//     console.log(c);
+// }
 
-checkContent('yes', 'yes');
+// checkContent('yes', 'yes');
 
 
            // TASK E
             
 
-let abc = "Hello";
-let reversed = abc.split('').reverse().join('');
-console.log(reversed);
+// let abc = "Hello";
+// let reversed = abc.split('').reverse().join('');
+// console.log(reversed);
+
+      // TASK F 
+// 1. Split the string
+// 2. Make set from this array
+// 3. Set.size !== string.length return true
+// 4. else return false
+
+const findDoublers = (str) => {
+    const splittedStr = str.split('');
+    const set = new Set(splittedStr);
+    if (splittedStr.length !== set.size) {
+        return true;
+    } else {
+        return false;
+    }
+     
+};
+console.log(findDoublers('boburmirzo'));
+console.log(findDoublers("qwerty"));
+
 
 
 
