@@ -1,3 +1,20 @@
+         // TASK G 
+         const highestIndex = (arr) => {
+            let foundIndex = -1;
+            let highestNumber = arr[0];
+        
+        
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > highestNumber) {
+                    highestNumber = arr[i];
+                    foundIndex = i;
+                }
+            }
+        
+            return foundIndex;
+        }
+
+
 
 
 // // TASK  C  test
@@ -58,18 +75,18 @@
 // 3. Set.size !== string.length return true
 // 4. else return false
 
-const findDoublers = (str) => {
-    const splittedStr = str.split('');
-    const set = new Set(splittedStr);
-    if (splittedStr.length !== set.size) {
-        return true;
-    } else {
-        return false;
-    }
+// const findDoublers = (str) => {
+//     const splittedStr = str.split('');
+//     const set = new Set(splittedStr);
+//     if (splittedStr.length !== set.size) {
+//         return true;
+//     } else {
+//         return false;
+//     }
      
-};
-console.log(findDoublers('boburmirzo'));
-console.log(findDoublers("qwerty"));
+// };
+// console.log(findDoublers('boburmirzo'));
+// console.log(findDoublers("qwerty"));
 
 
 
