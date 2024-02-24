@@ -57,12 +57,16 @@ document.addEventListener("click", function(e) {
 
     // edit operations
     if (e.target.classList.contains("edit-me")) {
-        let userInput = prompt("O'zgartirish kiriting", e.target.parentElement.parentElement.quertSelector(".item-text").innerHTML
+        let userInput = prompt("O'zgartirish kiriting", 
+        e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
         );
         if(userInput) {
-            axios.post("edit-item", {id: e.target.getAttribute("data-id"),
+            axios
+            .post("/edit-item", {
+                id: e.target.getAttribute("data-id"),
         new_input: userInput,
-    }).then((response) => {
+    })
+    .then((response) => {
         console.log(response);
         e.target.parentElement.parentElement.querySelector(
             ".item-text"
