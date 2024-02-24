@@ -1,5 +1,5 @@
-const res = require("express/lib/response");
-const { response } = require("../app");
+// const res = require("express/lib/response");
+// const { response } = require("../app");
 
 console.log('FrontEnd JS ishga tushdi');
 
@@ -35,11 +35,11 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     })
     .catch((err) => {
         console.log("please try again");
-    });
+    })
 });
 document.addEventListener("click", function(e) {
     // delete operation
-    console.log(e.target);
+    // console.log(e.target);
     if(e.target.classList.contains("delete-me")) {
         if(confirm("aniq ochirmoqchimisiz?")) {
             axios
@@ -50,8 +50,8 @@ document.addEventListener("click", function(e) {
             })
             .catch((err) => {
                 console.log("pls try again");
-            });
-        }
+            })
+        };
     }
         
 
@@ -75,9 +75,11 @@ document.addEventListener("click", function(e) {
     }
 });
 document.getElementById("clean-all").addEventListener("click", function() {
-   axios.post("/delete-all", {delete_all: true }).then(response => {
+   axios
+   .post("/delete-all", {delete_all: true })
+   .then(response => {
     alert(response.data.state);
-    document.location.reload();
+    document.location.reload()
    })
    .catch(err => {
     
